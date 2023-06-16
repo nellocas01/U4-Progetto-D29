@@ -1,30 +1,17 @@
 package com.example.U4ProgettoD29.observer;
 
+import org.springframework.stereotype.Component;
+
 import com.example.U4ProgettoD29.proxy.FireProbe;
 
-public class ControlCenter implements Observer {
-	private String updateLast;
-	private int updateCount;
-
-	public String getUpdateLast() {
-		return updateLast;
-	}
-
+@Component
+public class ControlCenter {
 	@Override
-	public void update(FireAlarm fa) {
-		String url = "http://host/alarm?=fireAlarmId=" + fa.getFireAlarmId() + "&lat=" + fa.getLatitude() + "&lon=" + fa.getLongitude() + "&smokelevel=" + fa.getSmokeLevel();
-		
-		if(fa.getSmokeLevel() > 5) {
-			if(url.contains("lat=74.941065&lon=32.147059")) {
-				System.out.println();
-				System.out.println("Allarme incendio!!!");
-			}else {
-				System.out.println();
-				System.out.println("Allarme incendio avviato: " + url);
-			}else {
-				System.out.println();
-				System.out.println("Incendio scampato!");
-			}
-		}
+	public void onFireAlarm(FireProbe probe, double smokeLevel) {
+		double latitude = probe.getLatitude();
+		double longitude = probe.getLongitude();
+		System.out.println("Alert staff - Probe: " + probe + ", Smoke Level: " + smokeLevel + ", Latitude: " + latitude
+				+ ", Longitude: " + longitude);
 	}
+
 }
