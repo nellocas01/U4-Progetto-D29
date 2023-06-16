@@ -22,4 +22,13 @@ public class FireProbeProxy implements FireProbe {
 		return probe.getSmokeLevel();
 	}
 
+	@Override
+	public void addListener(FireAlarm listener) {
+		probe.addListener(listener);
+	}
+
+	@Override
+	public void triggerFireAlarm() {
+		probe.triggerFireAlarm();
+	}
 }

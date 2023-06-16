@@ -1,4 +1,8 @@
-package com.example.U4ProgettoD29.proxy;
+package com.example.U4ProgettoD29.factory;
+
+import com.example.U4ProgettoD29.proxy.FireProbe;
+import com.example.U4ProgettoD29.proxy.FireProbeImpl;
+import com.example.U4ProgettoD29.proxy.FireProbeProxy;
 
 public class FireProbeFactoryImpl extends FireProbeFactory {
 	@Override

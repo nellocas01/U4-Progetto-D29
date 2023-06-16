@@ -2,10 +2,10 @@ package com.example.U4ProgettoD29;
 
 import org.junit.jupiter.api.Test;
 
+import com.example.U4ProgettoD29.factory.FireProbeFactory;
+import com.example.U4ProgettoD29.factory.FireProbeFactoryImpl;
 import com.example.U4ProgettoD29.observer.ControlCenter;
 import com.example.U4ProgettoD29.proxy.FireProbe;
-import com.example.U4ProgettoD29.proxy.FireProbeFactory;
-import com.example.U4ProgettoD29.proxy.FireProbeFactoryImpl;
 
 public class FireDetectionSystemTest {
 	@Test

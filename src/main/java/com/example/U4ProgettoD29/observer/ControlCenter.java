@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import com.example.U4ProgettoD29.proxy.FireProbe;
 
 @Component
-public class ControlCenter {
+public class ControlCenter implements FireAlarm {
 	@Override
 	public void onFireAlarm(FireProbe probe, double smokeLevel) {
 		double latitude = probe.getLatitude();
