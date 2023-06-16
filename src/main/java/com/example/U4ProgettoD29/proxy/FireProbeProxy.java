@@ -1,5 +1,7 @@
 package com.example.U4ProgettoD29.proxy;
 
+import com.example.U4ProgettoD29.observer.FireAlarm;
+
 public class FireProbeProxy implements FireProbe {
 	private FireProbeImpl probe;
 
@@ -31,4 +33,5 @@ public class FireProbeProxy implements FireProbe {
 	public void triggerFireAlarm() {
 		probe.triggerFireAlarm();
 	}
+
 }

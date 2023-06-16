@@ -10,8 +10,8 @@ public class ControlCenter implements FireAlarm {
 	public void onFireAlarm(FireProbe probe, double smokeLevel) {
 		double latitude = probe.getLatitude();
 		double longitude = probe.getLongitude();
-		System.out.println("Alert staff - Probe: " + probe + ", Smoke Level: " + smokeLevel + ", Latitude: " + latitude
-				+ ", Longitude: " + longitude);
+		System.out.println("Attenzione incendio in corso, livello di fumo : " + smokeLevel + ", latitudine: " + latitude
+				+ ", longitudine: " + longitude);
 	}
 
 }

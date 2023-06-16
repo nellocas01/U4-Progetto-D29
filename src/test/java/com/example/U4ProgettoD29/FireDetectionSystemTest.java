@@ -2,7 +2,6 @@ package com.example.U4ProgettoD29;
 
 import org.junit.jupiter.api.Test;
 
-import com.example.U4ProgettoD29.factory.FireProbeFactory;
 import com.example.U4ProgettoD29.factory.FireProbeFactoryImpl;
 import com.example.U4ProgettoD29.observer.ControlCenter;
 import com.example.U4ProgettoD29.proxy.FireProbe;
@@ -14,7 +13,7 @@ public class FireDetectionSystemTest {
 		ControlCenter controlCenter = new ControlCenter();
 
 		// Create fire probe using factory
-		FireProbeFactory fireProbeFactory = new FireProbeFactoryImpl();
+		FireProbeFactoryImpl fireProbeFactory = new FireProbeFactoryImpl();
 		FireProbe fireProbe = fireProbeFactory.createFireProbe(41.8781, -87.6298, 7.2);
 
 		// Simulate fire alarm

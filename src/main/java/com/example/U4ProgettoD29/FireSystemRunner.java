@@ -1,3 +1,5 @@
+package com.example.U4ProgettoD29;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

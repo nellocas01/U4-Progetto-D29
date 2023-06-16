@@ -3,6 +3,8 @@ package com.example.U4ProgettoD29.proxy;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.U4ProgettoD29.observer.FireAlarm;
+
 public class FireProbeImpl implements FireProbe {
 	private double latitude;
 	private double longitude;
@@ -42,11 +44,9 @@ public class FireProbeImpl implements FireProbe {
 	public void triggerFireAlarm() {
 		// TODO Auto-generated method stub
 		double smokeLevel = getSmokeLevel();
-        for (FireAlarm listener : listeners) {
-            listener.onFireAlarm(this, smokeLevel);
-        }
-    }
-
+		for (FireAlarm listener : listeners) {
+			listener.onFireAlarm(this, smokeLevel);
+		}
 	}
 
 }
