@@ -7,4 +7,8 @@ public interface FireProbe {
 
 	double getSmokeLevel();
 
+	// void addListener();
+
+	void triggerFireAlarm();
+
 }

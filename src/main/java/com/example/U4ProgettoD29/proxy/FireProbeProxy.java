@@ -21,4 +21,18 @@ public class FireProbeProxy implements FireProbe {
 	public double getSmokeLevel() {
 		return probe.getSmokeLevel();
 	}
+
+	/*
+	 * @Override public void addListener(FireAlarmListener listener) { // TODO
+	 * Auto-generated method stub probe.addListener(listener);
+	 * 
+	 * }
+	 */
+	@Override
+	public void triggerFireAlarm() {
+		// TODO Auto-generated method stub
+		probe.triggerFireAlarm();
+
+	}
+
 }

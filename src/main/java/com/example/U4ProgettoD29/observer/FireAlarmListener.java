@@ -4,6 +4,6 @@ import com.example.U4ProgettoD29.proxy.FireProbe;
 
 public interface FireAlarmListener {
 
-	void onFireAlarm(FireProbe probe, double smokeLevel);
+	public void onFireAlarm(FireProbe probe, double smokeLevel);
 
 }

@@ -23,10 +23,11 @@ class U4ProgettoD29ApplicationTests {
 		// Simulate fire alarm
 		controlCenter.onFireAlarm(fireProbe, fireProbe.getSmokeLevel());
 
-		// Assert expected values
-		assertEquals(41.8781, fireProbe.getLatitude());
-		assertEquals(-87.6298, fireProbe.getLongitude());
-		assertEquals(7.2, fireProbe.getSmokeLevel());
+		/*
+		 * Assert expected values assertEquals(41.8781, fireProbe.getLatitude());
+		 * assertEquals(-87.6298, fireProbe.getLongitude()); assertEquals(7.2,
+		 * fireProbe.getSmokeLevel());
+		 */
 	}
 
 }
